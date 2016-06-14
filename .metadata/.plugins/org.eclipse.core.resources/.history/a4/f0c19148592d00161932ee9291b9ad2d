@@ -1,0 +1,25 @@
+package functions;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class orgMaster
+{
+	public String org_Launch()
+	{
+		String expval="btnLogin";
+		WebDriver driver=new FirefoxDriver();
+		driver.get("http://opensource.demo.orangehrm.com");
+		String actval=driver.findElement(By.id("btnLogin")).getAttribute("id");
+		if (expval.equalsIgnoreCase(actval))
+		{
+			return "Pass";
+		}
+		else
+		{
+			return "Fail";
+		}
+	}
+
+}

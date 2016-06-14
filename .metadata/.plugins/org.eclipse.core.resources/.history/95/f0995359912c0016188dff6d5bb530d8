@@ -1,0 +1,27 @@
+package functions;
+
+public class basicannotations {
+
+	public static void main(String[] args)
+	{
+		function1();
+		function2();
+
+	}
+	
+	//static function without returning any value 
+	
+	public static void function1()
+	{
+		System.out.println("This is function1 code");
+	}
+	
+	//static function with returning values
+	
+	public static String function2()
+	{
+		System.out.println("This is function2 code");
+		return "Pass";
+	}
+
+}
